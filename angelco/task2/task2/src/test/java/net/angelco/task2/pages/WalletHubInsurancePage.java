@@ -25,12 +25,14 @@ public class WalletHubInsurancePage {
     WebElement fourthStar;
     @FindBy(xpath = "//div[@class='left-content']/a/span[text()='Reviews']/parent::a")
     WebElement reviewsMenuLink;
-    @FindBy(xpath = "//*[@id='reviews-section']/modal-dialog/div/div/write-review/div/ng-dropdown/div/i")
+    @FindBy(xpath = "//div[@class='dropdown second']")
     WebElement policyDropdown;
     @FindBy(xpath = "//li[text()='Health Insurance']")
     WebElement policyDropdownItem;
-    @FindBy(className = "textarea wrev-user-input validate")
+    @FindBy(xpath = "//textarea[@class='textarea wrev-user-input validate']")
     WebElement writeReviewTextArea;
+    @FindBy(xpath = "//div[text()='Submit']")
+    WebElement submitButton;
 
     String fourthReviewStarPath = "//*[@id='reviews-section']/div[1]/div[3]/review-star/div/*[name()='svg'][4]/*[name()='g']/*[name()='path']";
 
@@ -85,15 +87,11 @@ public class WalletHubInsurancePage {
 
         Lorem lorem = new Lorem();
 
-        String randomText = lorem.characters(200, 200, true, true);
+        String randomText = lorem.characters(199, 200, true, true);
 
         writeReviewTextArea.sendKeys(randomText);
 
-        try {
-            Thread.sleep(2000);
-        } catch (Exception exp) {
-
-        }
+        submitButton.click();
 
     }
 
