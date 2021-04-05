@@ -25,4 +25,9 @@ public class WalletHubTest {
     public void shouldHighlightReviewStarOnHover() {
         walletHubInsurancePage.assertReviewStarHighlightedOnHover();
     }
+
+    @Test
+    public void shouldSubmitReviewSuccessfully() {
+        walletHubInsurancePage.assertReviewSubmittedSuccessfully();
+    }
 }
