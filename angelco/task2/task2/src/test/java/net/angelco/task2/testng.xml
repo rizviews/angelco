@@ -1,7 +1,0 @@
-<suite name="WalletHubTestSuite">
-	<test name="WalletHubTest">
-		<classes>
-			<class name="net.angelco.task2.tests.WalletHubTest" />
-		</classes>
-	</test>
-</suite>

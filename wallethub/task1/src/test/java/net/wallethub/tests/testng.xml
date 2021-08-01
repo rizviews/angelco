@@ -1,0 +1,7 @@
+<suite name="FacebookTestSuite">
+	<test name="FacebookTest">
+		<classes>
+			<class name="net.wallethub.tests.tests.FacebookTest" />
+		</classes>
+	</test>
+</suite>

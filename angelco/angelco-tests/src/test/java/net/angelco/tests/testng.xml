@@ -1,7 +1,0 @@
-<suite name="FacebookTestSuite">
-	<test name="FacebookTest">
-		<classes>
-			<class name="net.angelco.tests.tests.FacebookTest" />
-		</classes>
-	</test>
-</suite>
