@@ -1,7 +1,0 @@
-<suite name="WalletHubTestSuite">
-	<test name="WalletHubTest">
-		<classes>
-			<class name="net.wallethub.task2.tests.WalletHubTest" />
-		</classes>
-	</test>
-</suite>
